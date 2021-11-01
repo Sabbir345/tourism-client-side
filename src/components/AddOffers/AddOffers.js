@@ -29,7 +29,7 @@ const AddOffers = () => {
         else if (img.length == 0) {
           alert('Image field is requird.')
         }else{
-            fetch('http://localhost:5000/new-offer', {
+            fetch('https://nameless-sands-07392.herokuapp.com/new-offer', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

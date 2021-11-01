@@ -15,7 +15,7 @@ const Home = () => {
     const [displayFavorites, setDisplayFavorites] = useState([]);
 
     useEffect(() => {
-        const url = 'http://localhost:5000/all-offers'
+        const url = 'https://nameless-sands-07392.herokuapp.com/all-offers'
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -25,7 +25,7 @@ const Home = () => {
     }, []);
 
     useEffect(() => {
-        const url = 'http://localhost:5000/all-favorites'
+        const url = 'https://nameless-sands-07392.herokuapp.com/all-favorites'
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -35,7 +35,7 @@ const Home = () => {
     }, []);
 
     useEffect(() => {
-        const url = 'http://localhost:5000/all-reviews'
+        const url = 'https://nameless-sands-07392.herokuapp.com/all-reviews'
         fetch(url)
             .then(res => res.json())
             .then(data => {

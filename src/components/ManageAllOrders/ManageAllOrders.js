@@ -13,7 +13,7 @@ const ManageAllOrders = () => {
 
     useEffect(() => {
 
-        const url = `http://localhost:5000/my-orders`
+        const url = `https://nameless-sands-07392.herokuapp.com/my-orders`
         fetch(url)
             .then(res => res.json())
             .then(data => {
